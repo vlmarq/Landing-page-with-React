@@ -6,8 +6,15 @@
     
     
     ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
+    other sylesheets into your bundle as well, e.j:
     
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+// first-of-type and first-child not working. Selects all <a> tags and turns them white.
+// I was trying to change only the first item ("Home") to white.
+
+// div#navbarNav {
+//     a:first-of-type { color: white; }
+// }

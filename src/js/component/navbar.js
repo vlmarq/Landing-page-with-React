@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Check index.scss file
+// import "../../styles/index.scss";
+
 const Navbar = props => {
 	const buildMenu = props.menu.map((item, index) => {
 		return (
@@ -19,7 +22,7 @@ const Navbar = props => {
 					{props.brand}
 				</a>
 				<button
-					className="navbar-toggler navbar-toggler-right"
+					className="navbar-toggler"
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarNav"
@@ -30,7 +33,7 @@ const Navbar = props => {
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNav">
 					{/* call function buildMenu to generate menu */}
-					<ul className="navbar-nav mr-auto">{buildMenu}</ul>
+					<ul className="navbar-nav ml-auto">{buildMenu}</ul>
 				</div>
 			</div>
 		</nav>
